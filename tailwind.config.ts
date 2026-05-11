@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        clinic: {
+          dark: "rgb(83, 14, 43)",
+          burgundy: "rgb(149, 55, 94)",
+          rose: "rgb(212, 125, 132)",
+          cream: "rgb(229, 227, 220)",
+          white: "rgb(255, 255, 255)",
+        },
+      },
+      fontFamily: {
+        serif: ["Instrument Serif", "serif"],
+        newsreader: ["Newsreader", "serif"],
+        sans: ["Arial", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
