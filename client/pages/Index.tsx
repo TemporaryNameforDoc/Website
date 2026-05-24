@@ -38,11 +38,11 @@ export default function Index() {
               </div>
 
               {/* Hero Image */}
-              <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto lg:col-span-1">
+              <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto lg:col-span-1 flex items-center justify-center bg-clinic-cream rounded-lg">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8bac93c5b75f45ef95612264986eda87?format=webp&width=800&height=1200"
                   alt="Dr. Mohamed Abouzekry"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
 
@@ -109,22 +109,22 @@ export default function Index() {
                   {t(language, "service_1_desc")}
                 </p>
               </div>
-              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:block">
+              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F683a08d61da74c95862d4c38132d5adc?format=webp&width=800&height=1200"
                   alt="Service"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
 
             {/* Service 2 - Image Left, Text Right */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
-              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:block order-2 lg:order-1">
+              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg order-2 lg:order-1">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8ee4da0dce46493a9f29143509ec069f?format=webp&width=800&height=1200"
                   alt="Service"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark order-1 lg:order-2">
@@ -147,22 +147,22 @@ export default function Index() {
                   {t(language, "service_3_desc")}
                 </p>
               </div>
-              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:block">
+              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F683a08d61da74c95862d4c38132d5adc?format=webp&width=800&height=1200"
                   alt="Service"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
 
             {/* Service 4 - Image Left, Text Right */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
-              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:block order-2 lg:order-1">
+              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg order-2 lg:order-1">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8ee4da0dce46493a9f29143509ec069f?format=webp&width=800&height=1200"
                   alt="Service"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark order-1 lg:order-2">
@@ -183,11 +183,11 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Doctor Image */}
-            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full order-2 lg:order-1">
+            <div className="relative h-64 sm:h-80 md:h-96 lg:h-full order-2 lg:order-1 flex items-center justify-center bg-clinic-cream rounded-lg">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8ee4da0dce46493a9f29143509ec069f?format=webp&width=800&height=1200"
                 alt="Dr. Mohamed Abouzekry"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
 
