@@ -12,7 +12,7 @@ export default function Index() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-32 pb-12 md:pb-16 bg-clinic-cream">
+      <section className="pt-28 md:pt-32 pb-0 md:pb-0 bg-clinic-cream relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="space-y-6 md:space-y-8">
             {/* Main Heading */}
@@ -29,7 +29,7 @@ export default function Index() {
             </div>
 
             {/* Hero Content Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12 pb-12 md:pb-24">
               {/* Consultation Box */}
               <div className="lg:col-span-1 bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark h-fit">
                 <p className="text-clinic-burgundy font-serif text-lg sm:text-xl md:text-2xl text-center leading-tight">
@@ -37,8 +37,8 @@ export default function Index() {
                 </p>
               </div>
 
-              {/* Hero Image */}
-              <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto lg:col-span-1 flex items-center justify-center bg-clinic-cream rounded-lg">
+              {/* Hero Image - Bigger and extends down */}
+              <div className="relative h-80 sm:h-96 md:h-[500px] lg:h-[600px] lg:col-span-1 flex items-center justify-center bg-clinic-cream rounded-lg -mb-32 lg:-mb-56 z-10">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8bac93c5b75f45ef95612264986eda87?format=webp&width=800&height=1200"
                   alt="Dr. Mohamed Abouzekry"
@@ -88,7 +88,7 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 md:py-20 bg-clinic-rose">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-20 bg-clinic-rose">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           {/* Services Title */}
           <div className="mb-12 md:mb-16">
@@ -97,10 +97,11 @@ export default function Index() {
             </h2>
           </div>
 
-          {/* Services Grid with alternating layout */}
-          <div className="space-y-8 md:space-y-12">
-            {/* Service 1 - Text Left, Image Right */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
+          {/* Services Grid - 2 Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+            {/* Left Column - Gynecology & Laparoscopy */}
+            <div className="space-y-6 md:space-y-8">
+              {/* Service 1 */}
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark">
                 <h3 className="text-clinic-dark font-serif text-2xl md:text-3xl mb-4">
                   {t(language, "service_1_title")}
@@ -109,36 +110,8 @@ export default function Index() {
                   {t(language, "service_1_desc")}
                 </p>
               </div>
-              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F683a08d61da74c95862d4c38132d5adc?format=webp&width=800&height=1200"
-                  alt="Service"
-                  className="w-full h-full object-contain rounded-lg"
-                />
-              </div>
-            </div>
 
-            {/* Service 2 - Image Left, Text Right */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
-              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg order-2 lg:order-1">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8ee4da0dce46493a9f29143509ec069f?format=webp&width=800&height=1200"
-                  alt="Service"
-                  className="w-full h-full object-contain rounded-lg"
-                />
-              </div>
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark order-1 lg:order-2">
-                <h3 className="text-clinic-dark font-serif text-2xl md:text-3xl mb-4">
-                  {t(language, "service_2_title")}
-                </h3>
-                <p className="text-clinic-dark font-newsreader text-sm md:text-base">
-                  {t(language, "service_2_desc")}
-                </p>
-              </div>
-            </div>
-
-            {/* Service 3 - Text Left, Image Right */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
+              {/* Service 3 */}
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark">
                 <h3 className="text-clinic-dark font-serif text-2xl md:text-3xl mb-4">
                   {t(language, "service_3_title")}
@@ -147,31 +120,46 @@ export default function Index() {
                   {t(language, "service_3_desc")}
                 </p>
               </div>
+
+              {/* Image for left column */}
               <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F683a08d61da74c95862d4c38132d5adc?format=webp&width=800&height=1200"
-                  alt="Service"
+                  alt="Gynecology and Laparoscopy Services"
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
 
-            {/* Service 4 - Image Left, Text Right */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
-              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg order-2 lg:order-1">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8ee4da0dce46493a9f29143509ec069f?format=webp&width=800&height=1200"
-                  alt="Service"
-                  className="w-full h-full object-contain rounded-lg"
-                />
+            {/* Right Column - Obstetrics & ICSI */}
+            <div className="space-y-6 md:space-y-8">
+              {/* Service 2 */}
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark">
+                <h3 className="text-clinic-dark font-serif text-2xl md:text-3xl mb-4">
+                  {t(language, "service_2_title")}
+                </h3>
+                <p className="text-clinic-dark font-newsreader text-sm md:text-base">
+                  {t(language, "service_2_desc")}
+                </p>
               </div>
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark order-1 lg:order-2">
+
+              {/* Service 4 */}
+              <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-2 border-clinic-dark">
                 <h3 className="text-clinic-dark font-serif text-2xl md:text-3xl mb-4">
                   {t(language, "service_4_title")}
                 </h3>
                 <p className="text-clinic-dark font-newsreader text-sm md:text-base">
                   {t(language, "service_4_desc")}
                 </p>
+              </div>
+
+              {/* Image for right column */}
+              <div className="relative h-64 sm:h-80 md:h-96 hidden lg:flex items-center justify-center bg-clinic-cream rounded-lg">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fb23d9c40846d454db59829c2ec1b400b%2F8ee4da0dce46493a9f29143509ec069f?format=webp&width=800&height=1200"
+                  alt="Obstetrics and ICSI Services"
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
             </div>
           </div>
@@ -217,7 +205,7 @@ export default function Index() {
 
               {/* CTA Button */}
               <button className="w-full bg-clinic-dark text-white font-newsreader py-3 md:py-4 rounded-lg hover:bg-clinic-burgundy transition-colors text-base md:text-lg font-bold">
-                {t(language, "book_consultation")}
+                {language === "en" ? "Consulate by contacting us!" : "استشيري بالتواصل معنا!"}
               </button>
             </div>
           </div>
